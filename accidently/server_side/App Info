@@ -1,0 +1,35 @@
+App ID:
+14a64e75-136c-4136-9f04-0ff48cf1dd89
+
+App Secret: 
+qI32pEJ0iCuyIwfhUyVTL2fE
+
+
+var Vinli = require('vinli')
+
+var client = new Vinli({
+  appId: '14a64e75-136c-4136-9f04-0ff48cf1dd89',
+  secretKey: 'qI32pEJ0iCuyIwfhUyVTL2fE'
+});
+
+
+https://auth.vin.li/oauth/authorization/new?client_id=fed34dea-7b10-4bc8-a3fc-4a91f333cc1a&redirect_uri=redirect.php&response_type=token
+
+
+
+https://auth.vin.li/oauth/authorization/new?client_id=fed34dea-7b10-4bc8-a3fc-4a91f333cc1a&redirect_uri=http://marneezy.com&response_type=Token
+
+
+VIKAS client ID = fed34dea-7b10-4bc8-a3fc-4a91f333cc1a
+
+http://marneezy.com/#access_token=nALlPtvuQ3ivbdjTjyA0Z9eN2uTJU0_Avdxtg1FBt018adE72q76WoxJ_r8cz70c&expires_in=7775999990&token_type=Bearer
+
+
+https://safety.vin.li/api/v1/devices/58cbdf62-4cfb-4c1b-8646-8c4c730dcda9/collisions
+
+
+OUR DEVICE ID:
+https://dev.vin.li/#/apps/1352896c-8b94-4b31-a1db-69c4262f8e8d/devices/58cbdf62-4cfb-4c1b-8646-8c4c730dcda9
+
+
+58cbdf62-4cfb-4c1b-8646-8c4c730dcda9
