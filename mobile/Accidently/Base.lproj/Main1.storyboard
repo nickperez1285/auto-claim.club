@@ -157,6 +157,8 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="568"/>
                     <connections>
+                        <outlet property="claimProofPhotoView" destination="CGO-0t-kOL" id="9RA-1W-b9Z"/>
+                        <outlet property="pageControl" destination="OjV-pZ-n9Y" id="TYX-eX-kFb"/>
                         <outlet property="pageScrollView" destination="Or0-aT-5rL" id="R5B-jU-mI8"/>
                         <outlet property="verticalScrollView" destination="CtH-38-T2n" id="zrW-qA-PxV"/>
                     </connections>

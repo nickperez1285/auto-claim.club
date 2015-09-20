@@ -8,9 +8,12 @@
 
 #import "FileClaimViewController.h"
 
-@interface FileClaimViewController ()
+@interface FileClaimViewController ()<UIScrollViewDelegate>
 @property (weak, nonatomic) IBOutlet UIScrollView *pageScrollView;
 @property (weak, nonatomic) IBOutlet UIScrollView *verticalScrollView;
+@property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
+@property (weak, nonatomic) IBOutlet UIImageView *claimProofPhotoView;
+@property(nonatomic)BOOL pageControlUsed;
 
 @end
 
@@ -22,6 +25,12 @@
     
     self.pageScrollView.contentSize = CGSizeMake(640, 284);
     self.verticalScrollView.contentSize = CGSizeMake(320, 1500);
+    
+    self.pageScrollView.delegate = self;
+    
+     self.claimProofPhotoView.image = [UIImage imageNamed:@"collisionPoint.png"];
+    self.claimProofPhotoView.frame = self.pageScrollView.bounds;
+   // self.pageControlUsed = NO;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -38,5 +47,32 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+-(void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView
+{
+////    if (self.pageControlUsed) {
+////        return;
+//    }
+    if (self.pageControl.currentPage == 0)
+    {
+        self.pageControl.currentPage = 1;
+        self.claimProofPhotoView.image = [UIImage imageNamed:@"collisionPoint.png"];
+       
+    }
+    else
+    {
+        self.pageControl.currentPage = 0;
+        self.claimProofPhotoView.image = [UIImage imageNamed:@"collisionPhoto.jpg"];
+    }
+       self.claimProofPhotoView.frame = self.pageScrollView.bounds;
+      // self.pageControlUsed = YES;
+
+}
+
+//- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
+//{
+//    self.pageControlUsed = NO;
+//
+//}
 
 @end

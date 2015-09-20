@@ -28,6 +28,8 @@
 		3AB6A0F31BAE83D1001DA01D /* CallAuthorityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB6A0F21BAE83D1001DA01D /* CallAuthorityViewController.m */; settings = {ASSET_TAGS = (); }; };
 		3AB6A0FB1BAEBFC7001DA01D /* OptionsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB6A0FA1BAEBFC7001DA01D /* OptionsListViewController.m */; settings = {ASSET_TAGS = (); }; };
 		3AB6A0FE1BAECF90001DA01D /* FileClaimViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB6A0FD1BAECF90001DA01D /* FileClaimViewController.m */; settings = {ASSET_TAGS = (); }; };
+		3AB6A1001BAEDC35001DA01D /* collisionPoint.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AB6A0FF1BAEDC35001DA01D /* collisionPoint.png */; settings = {ASSET_TAGS = (); }; };
+		3AB6A1021BAF00CE001DA01D /* AppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AB6A1011BAF00CE001DA01D /* AppIcon.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,8 @@
 		3AB6A0FA1BAEBFC7001DA01D /* OptionsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionsListViewController.m; sourceTree = "<group>"; };
 		3AB6A0FC1BAECF90001DA01D /* FileClaimViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileClaimViewController.h; sourceTree = "<group>"; };
 		3AB6A0FD1BAECF90001DA01D /* FileClaimViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileClaimViewController.m; sourceTree = "<group>"; };
+		3AB6A0FF1BAEDC35001DA01D /* collisionPoint.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = collisionPoint.png; sourceTree = "<group>"; };
+		3AB6A1011BAF00CE001DA01D /* AppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +146,7 @@
 				3AB6A0FD1BAECF90001DA01D /* FileClaimViewController.m */,
 				3AB6A09D1BAE0C9F001DA01D /* Main.storyboard */,
 				3AB6A0CC1BAE3BBD001DA01D /* Main1.storyboard */,
+				3AB6A1011BAF00CE001DA01D /* AppIcon.png */,
 				3AB6A0A31BAE0C9F001DA01D /* Assets.xcassets */,
 				3AB6A0A51BAE0C9F001DA01D /* LaunchScreen.storyboard */,
 				3AB6A0A81BAE0C9F001DA01D /* Info.plist */,
@@ -154,6 +159,7 @@
 				3AB6A0E51BAE7140001DA01D /* main_screen.png */,
 				3AB6A0E61BAE7140001DA01D /* splash_screen.png */,
 				3AB6A0ED1BAE74EF001DA01D /* alert_icon.png */,
+				3AB6A0FF1BAEDC35001DA01D /* collisionPoint.png */,
 				3AB6A0941BAE0C9F001DA01D /* Supporting Files */,
 			);
 			path = Accidently;
@@ -288,9 +294,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AB6A1001BAEDC35001DA01D /* collisionPoint.png in Resources */,
 				3AB6A0EA1BAE7140001DA01D /* file_a_claim.png in Resources */,
 				3AB6A0CE1BAE3BBD001DA01D /* Main1.storyboard in Resources */,
 				3AB6A0E71BAE7140001DA01D /* claim_icon.png in Resources */,
+				3AB6A1021BAF00CE001DA01D /* AppIcon.png in Resources */,
 				3AB6A0EC1BAE7140001DA01D /* splash_screen.png in Resources */,
 				3AB6A0E91BAE7140001DA01D /* dial_icon.png in Resources */,
 				3AB6A0EE1BAE74EF001DA01D /* alert_icon.png in Resources */,
@@ -478,11 +486,12 @@
 		3AB6A0C21BAE0C9F001DA01D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Vikas Iyer (N4TS4976A3)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Vikas Iyer (N4TS4976A3)";
 				INFOPLIST_FILE = Accidently/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.vi.accidently;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "19e2c351-d6ff-464b-a4ff-b0817ed369a3";
@@ -492,9 +501,10 @@
 		3AB6A0C31BAE0C9F001DA01D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Accidently/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.vi.accidently;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "19e2c351-d6ff-464b-a4ff-b0817ed369a3";
