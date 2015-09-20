@@ -9,6 +9,8 @@
 #import "FileClaimViewController.h"
 
 @interface FileClaimViewController ()
+@property (weak, nonatomic) IBOutlet UIScrollView *pageScrollView;
+@property (weak, nonatomic) IBOutlet UIScrollView *verticalScrollView;
 
 @end
 
@@ -17,6 +19,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.pageScrollView.contentSize = CGSizeMake(640, 284);
+    self.verticalScrollView.contentSize = CGSizeMake(320, 1500);
 }
 
 - (void)didReceiveMemoryWarning {
